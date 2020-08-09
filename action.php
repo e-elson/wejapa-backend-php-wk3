@@ -46,7 +46,7 @@
       <p><strong>Favorite Color Code: </strong><?php echo $favColor; ?></p>
       <p><strong>Gender: </strong><?php echo $gender; ?></p>
       <p><strong>Department: </strong><?php echo $dept; ?></p>
-      <a class="btn" href="form.php">Back to form</a>
+      <a class="btn" href="index.php">Back to form</a>
     </div>
    </body>
  </html>
