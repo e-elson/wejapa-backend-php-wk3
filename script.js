@@ -1,7 +1,7 @@
 
  const form = document.getElementById('form')
  const errElement = document.getElementById('error')
- const pwd = document.getElementById('pwd')
+ let pwd = document.getElementById('pwd')
  const name = document.getElementById('firstname')
  const secname = document.getElementById('secondname')
  const dob = document.getElementById('dateID')
@@ -17,7 +17,7 @@
          const re = /\S+@\S+\.\S+/
          return re.test(email)
      }
-    
+
     let messages = []
 
     if (name.value.length == 0 || secname.value.length == 0 || dob.value.length == 0
@@ -52,8 +52,9 @@
      {
 
          e.preventDefault()
+         pwd.value = ''
          errElement.innerText = messages.join(', ')
      }
 
-    
+
  })
